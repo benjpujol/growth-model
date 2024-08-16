@@ -336,6 +336,36 @@ if "last_loaded_scenario" not in st.session_state:
 st.title("Growth simulator")
 
 # Add an expandable section for the user guide
+
+with st.expander("Why this tool?"):
+    st.markdown(
+        """
+    This tool is designed for SaaS companies that may have additional revenue streams based on Gross Merchandise Value (GMV), similar to marketplace attributes. It addresses the complexity of business decision-making, especially when dealing with interconnected factors and multiple revenue streams. It helps in situations where:
+
+    - Decisions are not straightforward due to exponential factors and intricate relationships between variables.
+    - Effects like customer churn have compounded impacts (e.g., on referrals and GMV-based revenue) that are hard to calculate intuitively.
+    - Multiple revenue streams (subscription-based MRR and GMV-based revenue) need to be considered simultaneously.
+
+    The primary objective is to answer fundamental questions about revenue growth strategies for hybrid SaaS-marketplace models:
+
+    - Should we focus on reducing churn rate to maintain a stable customer base?
+    - Is expanding acquisition channels the best approach for growing both subscription and GMV-based revenue?
+    - How can we improve the sales cycle to accelerate growth across all revenue streams?
+    - What impact would enhancing pipeline transformation have on overall revenue?
+    - How does increasing GMV per user or improving feature penetration affect total revenue?
+
+    By using this tool, companies can:
+
+    - Make quantitative decisions based on real data across multiple revenue streams.
+    - Take a more informed and objective approach to strategic planning for hybrid business models.
+    - Clearly understand which areas will yield the greatest impact on overall revenue growth.
+    - Model the interplay between subscription-based and GMV-based revenue streams.
+
+    This data-driven method allows for better strategic decision-making and resource allocation in pursuit of revenue growth, taking into account the unique characteristics of SaaS businesses with marketplace-like revenue components.
+    """
+    )
+
+
 with st.expander("User Guide"):
     st.markdown(
         """
@@ -353,7 +383,7 @@ with st.expander("User Guide"):
     - **GMV Revenue**: Set user and GMV parameters
 
     ### Scenario Comparison Tab
-    - Select 2 scenarios to compare
+    - Select  scenarios to compare
     - View side-by-side parameter comparison
     - Analyze key metrics across scenarios
     
