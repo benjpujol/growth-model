@@ -1,1 +1,64 @@
-{"Test": {"params": {"start_date": "2024-08-16", "start_mrr": 21000.0, "monthly_sales_per_user": 250.0, "churn_rate": 7.000000000000001, "projection_months": 6, "leads_to_demo_rate": 20.0, "demo_to_trial_rate": 75.0, "trial_to_closed_won_rate": 85.0, "referral_to_trial_boost": 1.2, "sales_cycle_time": 1}, "lead_params": {"projection_months": 6, "outbound_lead_volume": 400, "paid_ads_lead_volume": 50, "seo_lead_volume": 20, "outbound_growth_rate": 2.0, "paid_ads_growth_rate": 2.0, "seo_growth_rate": 2.0, "referral_probability": 10.0, "referral_leads_per_customer": 1.0}, "gmv_params": {"users_per_customer": 3, "gmv_per_user": 300000, "feature_penetration": 10.0, "take_rate": 2.5}}, "Test2": {"params": {"start_date": "2024-08-16", "start_mrr": 21000.0, "monthly_sales_per_user": 250.0, "churn_rate": 3.1, "projection_months": 6, "leads_to_demo_rate": 20.0, "demo_to_trial_rate": 75.0, "trial_to_closed_won_rate": 85.0, "referral_to_trial_boost": 1.2, "sales_cycle_time": 1}, "lead_params": {"projection_months": 6, "outbound_lead_volume": 400, "paid_ads_lead_volume": 50, "seo_lead_volume": 20, "outbound_growth_rate": 2.0, "paid_ads_growth_rate": 2.0, "seo_growth_rate": 2.0, "referral_probability": 10.0, "referral_leads_per_customer": 1.0}, "gmv_params": {"users_per_customer": 3, "gmv_per_user": 300000, "feature_penetration": 10.0, "take_rate": 2.5}}}
+{
+  "Test2": {
+    "params": {
+      "start_date": "2024-08-16",
+      "start_mrr": 21000.0,
+      "monthly_sales_per_user": 250.0,
+      "churn_rate": 0.129,
+      "projection_months": 6,
+      "leads_to_demo_rate": 0.2,
+      "demo_to_trial_rate": 0.75,
+      "trial_to_closed_won_rate": 0.85,
+      "referral_to_trial_boost": 1.2,
+      "sales_cycle_time": 1
+    },
+    "lead_params": {
+      "projection_months": 6,
+      "outbound_lead_volume": 400,
+      "paid_ads_lead_volume": 50,
+      "seo_lead_volume": 20,
+      "outbound_growth_rate": 0.02,
+      "paid_ads_growth_rate": 0.02,
+      "seo_growth_rate": 0.02,
+      "referral_probability": 0.1,
+      "referral_leads_per_customer": 1.0
+    },
+    "gmv_params": {
+      "users_per_customer": 3,
+      "gmv_per_user": 300000,
+      "feature_penetration": 0.1,
+      "take_rate": 0.025
+    }
+  },
+  "Test1": {
+    "params": {
+      "start_date": "2024-08-16",
+      "start_mrr": 21000.0,
+      "monthly_sales_per_user": 250.0,
+      "churn_rate": 0.012,
+      "projection_months": 6,
+      "leads_to_demo_rate": 0.2,
+      "demo_to_trial_rate": 0.75,
+      "trial_to_closed_won_rate": 0.85,
+      "referral_to_trial_boost": 1.2,
+      "sales_cycle_time": 1
+    },
+    "lead_params": {
+      "projection_months": 6,
+      "outbound_lead_volume": 400,
+      "paid_ads_lead_volume": 50,
+      "seo_lead_volume": 20,
+      "outbound_growth_rate": 0.02,
+      "paid_ads_growth_rate": 0.02,
+      "seo_growth_rate": 0.02,
+      "referral_probability": 0.1,
+      "referral_leads_per_customer": 1.0
+    },
+    "gmv_params": {
+      "users_per_customer": 3,
+      "gmv_per_user": 300000,
+      "feature_penetration": 0.1,
+      "take_rate": 0.025
+    }
+  }
+}
