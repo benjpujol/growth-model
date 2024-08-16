@@ -335,6 +335,36 @@ if "last_loaded_scenario" not in st.session_state:
 # Main app
 st.title("Growth simulator")
 
+# Add an expandable section for the user guide
+with st.expander("User Guide"):
+    st.markdown(
+        """
+    ### Quick Start
+    1. Use the sidebar to set model parameters
+    2. Create or load scenarios
+    3. View results in charts and tables
+    4. Compare scenarios in the Comparison tab
+
+    ### Main Model Tab
+    - **Scenario Management**: Create/load scenarios
+    - **Model Parameters**: Adjust key metrics (MRR, churn, etc.)
+    - **Lead Generation**: Set lead volumes and growth rates
+    - **Sales Pipeline**: Set conversion rates
+    - **GMV Revenue**: Set user and GMV parameters
+
+    ### Scenario Comparison Tab
+    - Select 2 scenarios to compare
+    - View side-by-side parameter comparison
+    - Analyze key metrics across scenarios
+    
+
+    ### Tips
+    - Experiment with different parameters
+    - Use comparison to identify optimal strategies
+    - Regularly update scenarios with real data
+    """
+    )
+
 # Create tabs for different pages
 tab1, tab2 = st.tabs(["Main Model", "Scenario Comparison"])
 
@@ -936,63 +966,3 @@ with tab2:
 
     else:
         st.info("Please select at least two scenarios to compare.")
-
-# Add the following user guide below the existing code
-
-st.markdown(
-    """
-# Growth Simulator: User Guide
-
-This Growth Simulator is a powerful tool designed to help you model and compare different growth scenarios for your business. Here's how to use it effectively:
-
-## Main Model Tab
-
-1. **Scenario Management**:
-   - Create a new scenario or load an existing one using the sidebar.
-   - Input your parameters for various aspects of the business model.
-
-2. **Model Parameters**:
-   - Adjust start date, MRR, sales per user, churn rate, and projection months.
-
-3. **Lead Generation Parameters**:
-   - Set lead volumes and growth rates for different channels (outbound, paid ads, SEO).
-   - Configure referral parameters.
-
-4. **Sales Pipeline Parameters**:
-   - Adjust conversion rates for each stage of the sales funnel.
-   - Set the sales cycle time and referral boost.
-
-5. **GMV-based Revenue Parameters**:
-   - Input users per customer, GMV per user, feature penetration, and take rate.
-
-6. **View Results**:
-   - Examine the generated data table and various charts.
-   - Note the projected date for reaching €1M ARR.
-
-## Scenario Comparison Tab
-
-1. **Select Scenarios**:
-   - Choose two or more scenarios to compare from your saved list.
-
-2. **Compare Parameters**:
-   - View a side-by-side comparison of all input parameters for selected scenarios.
-
-3. **Analyze Key Metrics**:
-   - Compare final MRR, ARR, customer count, time to €1M ARR, and other crucial metrics.
-
-4. **Visualize Differences**:
-   - Examine MRR and customer growth charts for all selected scenarios.
-
-5. **Export Data**:
-   - Use the download button to export comparison data as a CSV file.
-
-## Tips for Effective Use
-
-- Create multiple scenarios to model different growth strategies or market conditions.
-- Use the comparison feature to identify the most promising strategies.
-- Regularly update your scenarios as you gather more real-world data.
-- Experiment with different parameter combinations to understand their impact on growth.
-
-By leveraging this tool, you can make data-driven decisions about your growth strategy and resource allocation, helping to optimize your path to sustainable growth.
-"""
-)
