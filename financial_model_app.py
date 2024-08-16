@@ -333,7 +333,7 @@ if "last_loaded_scenario" not in st.session_state:
 
 
 # Main app
-st.title("Financial Model Simulator with Scenario Comparison")
+st.title("Startup growth simulator")
 
 # Create tabs for different pages
 tab1, tab2 = st.tabs(["Main Model", "Scenario Comparison"])
