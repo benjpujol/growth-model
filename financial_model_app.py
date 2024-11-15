@@ -72,9 +72,16 @@ def run_pipeline(params, leads):
         conversion_rate = params[f"{prev_stage}_to_{stage.lower()}_rate"]
 
         for source in lead_sources:
-            pipeline_by_source[f"{stage}_{source}"] = (
-                pipeline_by_source[f"{prev_stage}_{source}"] * conversion_rate
-            ).fillna(0)
+            if stage == "demo" and source == "seo":
+                # Apply 90% conversion rate for SEO leads to demo
+                pipeline_by_source[f"demo_seo"] = (
+                    pipeline_by_source[f"leads_seo"] * 0.90
+                )
+            else:
+                # Apply standard conversion rates for other sources/stages
+                pipeline_by_source[f"{stage}_{source}"] = (
+                    pipeline_by_source[f"{prev_stage}_{source}"] * conversion_rate
+                )
 
         # Handle referrals separately
         if stage == "trial":
